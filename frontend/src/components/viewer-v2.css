@@ -15,3 +15,6 @@
 .two-d-controls .two-d-input-label{color:#8aa6af;font:9px ui-monospace,monospace;letter-spacing:.05em}
 .sync-button.sync-active{border-color:#48bde0!important;color:#eaffff!important;background:#0b3040!important}
 .sync-button.sync-off{border-color:#4a3d43!important;color:#b8aeb2!important;background:#151114!important}
+
+/* GPU overlay owns realtime 1D/2D geometry; disable the legacy DOM primitives. */
+.one-d-card .one-d-cloud-dot,.one-d-card .one-d-centroid,.two-d-card .two-d-cloud-point,.two-d-card .two-d-centroid,.two-d-card .shape-rect,.two-d-card .shape-square,.two-d-card .shape-circle{display:none!important}
