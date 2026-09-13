@@ -1,0 +1,19 @@
+{
+  "name": "foveated-lidar-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n BACKEND,FRONTEND \"cd ../backend && python -m uvicorn app.main:app --reload --port 8000\" \"astro dev\"",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/react": "latest",
+    "astro": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "three": "latest",
+    "concurrently": "latest"
+  }
+}
